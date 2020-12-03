@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<script type="text/javascript" src="js/JQuery3.3.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.toggle').click(function(){
+				$('.toggle').toggleClass('active')
+
+				$('nav ul').toggleClass('active-menu')
+			})
+		});
+	</script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<!-- jQuery and JS bundle w/ Popper.js -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+	<meta charset="utf-8">
+	<title>Personal Website</title>
+
+	<link rel="shortcut icon" href="images/icon.png">
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+</head>
+
+<body>
+	<section id="main">
+		<nav>
+			<div class="row"></div>
+			<div class="col-sm-12">
+				<ul class="menu">
+					<li class="active"><a href="#main" >Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#education">Education</a></li>
+					<li><a href="#project">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li class="dropdown">
+						<a href="javascript:void(0)" class="dropbtn">Downloads</a>
+						<div class="dropdown-content">
+							<a href="images/computer-science-resume-example.png" download="">Resume</a>
+						</div>
+					</li>
+
+				</ul>
+		</nav>
+			<div class="name">
+			<div class="card" style="width: 15rem;"></div>
+			<div class="card-body"></div>
+				<p>Welcome</p>
+					<h1>My Name is Raj Patel</h1>
+						<p class="details">I'm currently a student at New Jersey Institution Of Technology, and I'm currently majoring in Computer Science. </p>
+			</div>
+	</section>
+
+	<section id="about">
+		<div class="about-text">
+		<div class="card"></div>
+		<div class="card-body"></div>
+			<h1>About Me</h1>
+				<p class="card-text">My name is Raj, and I'm a sophomore at New Jersey Institution Of Technology or NJIT for short. At the moment my plan is to major in Computer Science while possibly double majoring in Business too. My goal is to involve myself more with random projects related to Computer Science and have the the chance to put it on this website.<br> As a side note you can also hover over the downloads tab and it has files you can download from resumes to anything I post. </p>
+		</div>
+
+		<div class="about-model" >
+			<img src="images/njit.jpg" alt="model"/>
+		</div>
+	</section>
+
+	<section id="education">
+		<div class="edu-heading">
+			<h1>Education</h1>
+				<p>Languages and skills I have involved myself so far.</p>
+		</div>
+
+		<div class="card-deck w-75">
+			<div class="card text-center">
+				<img class="card-img-top" src="images/exp2.png" alt="Card image cap">
+				<div class="card-body">
+					<h5 class="card-title">Experiences</h5>
+					<p class="card-text">-Techician<br>-Research Assistant<br>-IT Intern<br>-Software Intern</p>
+				</div>
+				<div class="card-footer">
+					<small class="text-muted"> NOTE: THESE ARE ALL EXAMPLES</small>
+				</div>
+			</div>
+			<div class="card text-center">
+				<img class="card-img-top" src="images/code.jpg" alt="Card image cap">
+				<div class="card-body">
+					<h5 class="card-title">Languages I'm Learning</h5>
+					<p class="card-text">-Python<br>-Java<br>-C++<br>-PHP<br>-HTML<br>-CSS<br>-And many more!</p>
+				</div>
+				<div class="card-footer">
+					<small class="text-muted">NOTE: THESE ARE ALL EXAMPLES</small>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card text-center">
+				<img class="card-img-top" src="images/skills.png" alt="Card image cap">
+				<div class="card-body">
+					<h5 class="card-title">Skills</h5>
+					<p class="card-text">-Outstanding software testing and troubleshooting skills<br>-Lnowledgeable of IOS and its architecture<br>-Excellent interpersonal skills, demostrated by communicating with clients, colleagues and non-technical professionals on a daily basis</p>
+				</div>
+				<div class="card-footer">
+					<small class="text-muted">NOTE: THESE ARE ALL EXAMPLES</small>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="project">
+		<h1 class="p-heading">Projects</h1>
+			<div class="p-container">
+				<div class="p-box">
+					<div class="overlay-text">
+						<h1>Facial Detection </h1>
+						<p>Computer Science Project<br>OpenCV C++</p>
+					</div>
+						<img src="images/facial.png">
+				</div>
+
+			<div class="p-box">
+				<div class="overlay-text">
+					<h1>Social Media Scheduler</h1>
+					<p>Computer Science Project<br>HTML,Javascript,Python,SQl</p>
+				</div>
+				<img src="images/SOCIAL.jpg">
+			</div>
+
+			<div class="p-box">
+				<div class="overlay-text">
+					<h1>Hangman Games</h1>
+					<p>Computer Science Project<br>Python</p>
+				</div>
+				<img src="images/hangman.png">
+			</div>
+
+		</div>
+	</section>
+
+
+	<section id="contact-btn">
+		<h1 class="contact-btn-heading">Contact Me</h1>
+	</section>
+
+	<section id="contact">
+		<form>
+
+			<div class="contact-left">
+				<h1 class="contact-left-heading"><span style="border-bottom: 3px solid #1ED98B;">Write To Me</span></h1>
+			<div class="full-name">
+				<span>Name</span>
+					<label>
+						<input type="text" placeholder="Enter Full Name"/>
+					</label>
+			</div>
+			<div class="full-email">
+				<span>Email</span>
+					<label>
+						<input type="email" placeholder="Enter Email"/>
+					</label>
+			</div>
+			</div>
+
+			<div class="contact-right">
+			<div class="message">
+				<span>Message</span>
+					<label>
+						<textarea name="message" rows="5" cols="200" placeholder="Click to start typing..."></textarea>
+					</label>
+			</div>
+				<button type="submit">submit</button>
+			</div>
+
+		</form>
+	</section>
+
+	</body>
+</html>
